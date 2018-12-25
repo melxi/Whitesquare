@@ -208,19 +208,17 @@ h3::before {
 
 h3::after {
   content: "";
-  background-image: url(../img/tile-pattern.png);
 	position: absolute;
+  background-image: url(../img/tile-pattern.png);
+  background-repeat: no-repeat;
+  background-size: 305px 15px;
 	width: 305px;
 	height: 15px;
 	top: 0;
 	left: 155px;
 }
 
-.about {
-	flex: 0 1 460px;
-}
-
-.testimonial {
+.about, .testimonial{
 	flex: 0 1 460px;
 }
 
@@ -262,7 +260,7 @@ h3::after {
 	text-align: justify;
 }
 
-.about span {
+.about a {
 	font-size: 12px;
 	color: #525252;
 	text-decoration: underline;
@@ -278,9 +276,176 @@ h3::after {
 	text-align: justify;
 }
 
-.testimonial span {
+.testimonial a {
 	font-family: Tahoma;
 	font-size: 12px;
 	letter-spacing: 1px;
 	color: #525252;
+}
+
+/* Service, Team & Support */
+.services h3::after {
+	content: "";
+	position: absolute;
+  background-image: url(../img/tile-pattern.png);
+  background-repeat: no-repeat;
+	width: 215px;
+	height: 15px;
+	top: 0;
+	left: 80px;
+}
+
+.service, .team, .support{
+	flex: 0 1 305px;
+}
+
+.services p {
+	font-size: 12px;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	line-height: 17px;
+	color: #8f8f8f;
+	text-align: justify;
+}
+
+.services a {
+	font-size: 12px;
+	color: #525252;
+	text-decoration: underline;
+	margin-top: 25px;
+}
+
+.team h3::after {
+	left: 90px;
+}
+
+.teams-item {
+	display: flex;
+}
+
+.teams-item .box {
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 20px;
+}
+
+.team-desc h4 {
+	font-size: 14px;
+	font-weight: normal;
+	color: #525252;
+	text-transform: uppercase;
+}
+
+.team-desc p {
+	line-height: 13px;
+	letter-spacing: 0.9px;
+	text-align: justify;
+}
+
+.support h3::after {
+	width: 170px;
+	left: 130px;
+}
+
+/* Our Clients */
+
+/* Footer */
+footer {
+	margin-top: 40px;
+	padding: 14px;
+	background-color: #7e7e7e;
+}
+
+footer .info > * {
+	margin: 0 10px;
+}
+
+footer .info {
+	display: flex;
+	flex: 3;
+}
+
+.footer-logo {
+	flex: 1.5;
+}
+
+.footer-logo img {
+	float: right;
+}
+
+.tw-feed {
+	flex: 3;
+}
+
+.sitemap {
+	flex: 1.5;
+}
+
+.social-net {
+	flex: 1;
+}
+
+footer h4 {
+	padding-bottom: 4px;
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	border-bottom: 1px solid #919191;
+}
+
+footer .date {
+	font-family: Tahoma;
+	font-size: 11px;
+	color: #b4aeae;
+	text-decoration: underline;
+}
+
+footer p {
+	margin-top: 5px;
+	font-family: Tahoma;
+	font-size: 11px;
+	line-height: 1.5;
+	letter-spacing: 0.4px;
+	word-spacing: 1px;
+	text-align: justify;
+	color: #dbdbdb;
+}
+
+.footer-nav {
+	display: flex;
+}
+
+.footer-nav .left {
+	margin-right: 40px;
+}
+
+.footer-nav a {
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #dbdbdb;
+	text-decoration: none;
+}
+
+.social-icons {
+	margin-top: 5px;
+}
+
+.big-icons a {
+	margin-right: 2px;
+}
+
+.small-icons {
+	margin-top: 5px;
+}
+
+.small-icons a {
+	margin-right: 2px;
+}
+
+.footer-logo p {
+	clear: both;
+	padding-top: 20px;
+	letter-spacing: normal;
+	line-height: 1;
+	text-align: right;
 }
